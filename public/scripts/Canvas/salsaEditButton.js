@@ -16,24 +16,17 @@ if (matches) {
     }
 }
 
-(function($) {
+$(document).ready(function() {
 
-    $(function(){
+    if ($('.edit_syllabus_link').length > 0 && $('#salsa_document_edit_link').length > 0) {
 
-        if ($('.edit_syllabus_link').length > 0 && $('a:contains("SALSA HTML")').length > 0) {
+        var salsaLink = $("#salsa_document_edit_link").attr("href");
 
-            var salsaID = $(".content").attr('id'),
-                salsaLink = 'http://salsa.usu.edu/SALSA/' + salsaID;
+        $('.edit_syllabus_link').before('<a class="btn salsaLink button-sidebar-wide" href="' + salsaLink + '" data-tooltip="top" title="Button will open in a new tab" target="_blank"><img src="https://raw.githubusercontent.com/idbygeorge/salsa/master/public/img/salsa_icon.png"> Edit My SALSA</a>');
+        $('.edit_syllabus_link').remove();
+    }
 
-            $('.edit_syllabus_link').before('<a class="btn salsaLink button-sidebar-wide" href="/courses/' + coursenum + '/wiki/edit-gui-salsa" data-tooltip="top" title="Button will open in a new tab" target="_blank"><img src="https://raw.githubusercontent.com/idbygeorge/salsa/master/public/img/salsa_icon.png"> Edit My SALSA</a>');
-        }
-
-        if ($('a:contains("Edit your SALSA")').length > 0){
-            document.location.href = $('a:contains("Edit your SALSA")').attr('href');
-        }
-    });
-
-}());
+});
 
 
 

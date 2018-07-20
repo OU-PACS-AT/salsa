@@ -14,7 +14,8 @@
 ActiveRecord::Schema.define(version: 20161117024708) do
 
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  #enable_extension "plpgsql"
+  #enable_extension "mysql2"
 
   create_table "components", force: true do |t|
     t.string   "name"
@@ -106,7 +107,7 @@ ActiveRecord::Schema.define(version: 20161117024708) do
     t.datetime "dashboard_start_at"
     t.datetime "dashboard_end_at"
     t.string   "home_page_redirect"
-    t.json     "default_account_filter"
+    t.text     "default_account_filter"
   end
 
   add_index "organizations", ["depth"], name: "index_organizations_on_depth", using: :btree
@@ -121,10 +122,10 @@ ActiveRecord::Schema.define(version: 20161117024708) do
     t.datetime "run_at",                              null: false
     t.integer  "job_id",      limit: 8,               null: false
     t.text     "job_class",                           null: false
-    t.json     "args",                  default: [],  null: false
+    t.text     "args"             
     t.integer  "error_count",           default: 0,   null: false
     t.text     "last_error"
-    t.text     "queue",                 default: "",  null: false
+    t.text     "queue"         
   end
 
   create_table "report_archives", force: true do |t|
@@ -133,7 +134,7 @@ ActiveRecord::Schema.define(version: 20161117024708) do
     t.integer  "organization_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.json     "report_filters"
+    t.text     "report_filters"
   end
 
   add_index "report_archives", ["organization_id"], name: "index_report_archives_on_organization_id", using: :btree

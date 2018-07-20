@@ -202,20 +202,22 @@ $(function() {
 
     // remove hidden table cells
     $('.col2 tr > :nth-child(2),.col3 tr > :nth-child(3),.col4 tr > :nth-child(4),.col5 tr > :nth-child(5)').nextAll().remove();
-
-    if (typeof(html_share_link_text) == 'undefined'){
-      html_share_link_text = 'SALSA HTML';
-    }
-
-    var htmlLink = $("#html_share_link a").clone().text(html_share_link_text).attr({ 'id': 'salsa_document_view_link' });
-
-    var htmlDiv = $('<div/>').css({ float: 'right' }).append(htmlLink);
+ 
+    // Will Poillion - Added 5-11-2017
+    var htmlLink = $("#html_share_link a").clone().text('Print').attr({ 'id': 'salsa_document_view_link' });
+    var htmlEditLink = $("#html_share_edit_link a").clone().text('Edit').attr({ 'id': 'salsa_document_edit_link' }).addClass('hidden');
+    
+    var htmlDiv = $('<div/>').css({ float: 'right' }).append(htmlLink).append("&nbsp;&nbsp;").append(htmlEditLink);
 
 /*      var pdfLink = $("#pdf_share_link a").clone().text('PDF Version');
     var pdfDiv = $('<div/>').css({ display: 'block', textAlign: 'right', maxWidth: '8in' }).append(pdfLink);*/
 
-    $('.content:first', salsaDocument).prepend(htmlDiv);
+    // Will Poillion - Changed 6-26-2017
+    //    Changed to prepend salsa view link before accordion
+    //$('.content:first', salsaDocument).prepend(htmlDiv);
+    $('#banner', salsaDocument).after(htmlDiv);
 
+    
     settings.data = salsaDocument.html();
 
     $("#choose_course_prompt").dialog("close");

@@ -1,6 +1,6 @@
 class Document < ActiveRecord::Base
-  versioned
-
+  #versioned
+  
   before_validation :normalize_blank_values, :ensure_ids
 
   belongs_to :organization

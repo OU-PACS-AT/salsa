@@ -5,7 +5,6 @@ gem 'rails', '4.0.0'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'debugger'
   gem 'rspec-rails'
 end
 
@@ -20,6 +19,8 @@ end
 
 #postgresql for db
 gem 'pg'
+gem 'mysql2', '~> 0.3.18'
+#gem 'mysql2'
 
 group :production do
   gem 'rails_12factor'
@@ -42,17 +43,18 @@ gem 'bootstrap-sass'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-gem 'jquery-ui-rails'
+gem 'jquery-ui-rails', '~> 4.2.0'
 
 #TODO: remove foundation
 gem 'zurb-foundation'
+gem 'i18n'
 
 # Add awesome nested set
 gem 'awesome_nested_set', '~> 3.0.0.rc.3'
 # pagination
 gem 'kaminari'
 # active record version control
-gem 'vestal_versions', :git => 'git://github.com/laserlemon/vestal_versions'
+#gem 'vestal_versions', :git => 'git://github.com/laserlemon/vestal_versions'
 
 # processing meta data for orgs and accounts
 gem 'pivot_table'
@@ -67,7 +69,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'uber-s3'
 
 # instructure canvas api
-gem 'canvas-api'
+gem 'canvas-api', '~> 0.7'
 
 gem 'nokogiri'
 
@@ -84,3 +86,7 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+# PDF Generation
+gem 'wicked_pdf'  
+#gem 'wkhtmltopdf-binary' 

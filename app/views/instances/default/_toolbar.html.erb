@@ -10,7 +10,7 @@
         <%= link_to '<i class="general fi-arrow-right"></i>Publish'.html_safe, document_path(@document.edit_id, :publish => true), :authenticity_token => form_authenticity_token(), :method => :put, :remote => true, :id => 'tb_share' %>
         </li>
     </ul>
-    <!-- <ul style="float:right">
+    <ul style="float:right">
         <li><a href="#example" id="tb_example"><i class="general foundicon-star"></i>Example</a></li>
         
          <li><a href="/help.html" target="_blank" id="tb_help"><i class="general foundicon-question"></i>Help</a></li>
@@ -44,7 +44,7 @@
                     using: <%= @document.component.version - @document.component.versions.count - 1 %>
                 </li>
             <% end %>
-        </ul>-->
+        </ul>
     </nav>
 </header>
 
@@ -57,9 +57,14 @@
 </div>
 
 <div id="share_prompt" style="display:none; cursor: default">
-    <p>HTML link:</p>
+    <p>HTML View link:</p>
     <p id="html_share_link"><%= link_to @view_url, @view_url, :target => '_blank', :id => "view_url" %></p>
-
+    
+    <br>
+    
+    <p>HTML Edit link:</p>
+    <p id="html_share_edit_link"><%= link_to @edit_url, @edit_url, :target => '_blank', :id => "edit_url" %></p>
+    
     <div style="padding: 20px 0px 10px;">
         <p id="send_canvas" <% if !@document[:lms_course_id] %>class="hidden"<% end %>>
          <%= link_to "Send to Canvas", document_path(@document.edit_id, canvas: true), :authenticity_token => form_authenticity_token(), :method => :put, :remote => true, :id => 'tb_send_canvas', :class => 'button' %>
@@ -143,8 +148,8 @@
     <p style="padding: 10px;">The <strong>Edit Link</strong> is a unique, randomly-generated URL for your SALSA:</p>
     <p id="custom-url" style="text-decoration: underline;"></p>
     <div style="color: #666; font-style: italic;">
-        <p>If your browser’s bookmarks are visible, drag and drop the “My SALSA” link to create a bookmark.</p>
-        <p>Or, create a bookmark with the following keyboard shortcuts: Ctrl+D (Windows and Chrome OS) or ⌘-D (Mac).</p>
+        <p>If your browserâ€™s bookmarks are visible, drag and drop the â€œMy SALSAâ€� link to create a bookmark.</p>
+        <p>Or, create a bookmark with the following keyboard shortcuts: Ctrl+D (Windows and Chrome OS) or âŒ˜-D (Mac).</p>
     </div>
     <p style="padding: 10px;">The <strong>Template Link</strong> generates a <em>new</em> SALSA pre-populated with the information from your SALSA:</p>
     <p id="custom-url"><%= link_to @template_url, @template_url, :target => '_blank', :id => "view_url" %></p>

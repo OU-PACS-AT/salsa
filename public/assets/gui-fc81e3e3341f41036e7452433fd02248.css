@@ -1,0 +1,649 @@
+/* gradients */
+/* line 21, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#share_prompt a.button, #share_prompt button, #choose_institution_prompt a.button, #choose_institution_prompt button {
+  background-color: #333;
+  padding: .5em .5em;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+}
+/* line 29, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#share_prompt a.button:hover, #share_prompt button:hover, #choose_institution_prompt a.button:hover, #choose_institution_prompt button:hover {
+  background-color: #6a7f95;
+}
+/* line 34, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#share_prompt .details, #choose_institution_prompt .details {
+  margin: -20px 0px 0px 140px;
+}
+
+/* line 40, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#pdf_share_link em {
+  display: block;
+  font-size: .8em;
+}
+
+/* line 46, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.masthead, footer, #preview_control {
+  background: #556677;
+  overflow: hidden;
+}
+
+/* line 47, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.masthead li, footer li {
+  float: left;
+}
+
+/* line 48, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+footer li a, footer span {
+  padding: 5px;
+  display: block;
+}
+
+/* line 49, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#preview_control a {
+  float: right;
+}
+
+/* line 51, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.masthead a, footer a, #preview_control a, .masthead a:visited, footer a:visited, #preview_control a:visited, #preview_control .previewLabel {
+  display: block;
+  padding: 5px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 52, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.masthead a:hover, footer a:hover, #preview_control a:hover, .masthead a:focus, footer a:focus, #preview_control a:focus {
+  background: #6a7f95;
+  color: #eee;
+}
+
+/* line 54, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+a.home {
+  float: left;
+}
+
+/* line 56, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.masthead {
+  top: 0;
+}
+
+/* line 57, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+footer {
+  bottom: 0;
+}
+
+/* line 58, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.masthead, footer {
+  color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+/* line 59, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#toolbar i {
+  font-size: .85em;
+  text-decoration: none;
+  padding-right: .5em;
+}
+
+/* line 60, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#share_prompt {
+  padding-top: 10px;
+}
+
+/* line 63, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#edit_syllabus #page section {
+  display: none;
+}
+/* line 64, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#edit_syllabus #page section.active {
+  display: block;
+}
+
+/* line 68, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+nav {
+  max-width: 930px;
+  margin: auto;
+}
+
+/* line 70, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#wrapper {
+  height: 100%;
+  width: 916px;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  margin: auto;
+}
+
+/* line 71, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#tabs {
+  float: left;
+  margin-top: 100px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+/* line 72, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#tabs li {
+  text-align: left;
+  line-height: 1.4;
+}
+
+/* line 73, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#tabs li a {
+  display: block;
+  padding: 4px 4px 4px 8px;
+  background: #EBEBEB;
+  color: black;
+  text-decoration: none;
+  border: solid 3px #EBEBEB;
+}
+
+/* line 74, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#tabs li a:hover, #tabs li.selected a {
+  background: #fff;
+  border-color: #aaa;
+}
+
+/* line 75, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#tabs li a:hover.tool, #tabs li.selected a.tool {
+  border-color: #556677;
+}
+
+/* line 76, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#tabs li i {
+  float: right;
+}
+
+/* line 78, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#tabs li.button {
+  margin-bottom: 3px;
+}
+
+/* line 79, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#tabs li.noicon {
+  padding-right: 15px;
+}
+
+/* line 80, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#tabs li.save {
+  margin-bottom: 20px;
+}
+
+/* line 81, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#tabs li.preview {
+  margin-top: 20px;
+}
+
+/* line 83, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#tabs li.information a:hover, #tabs li.information.selected a, .information #controlPanel {
+  border-color: #C0C0C0;
+}
+
+/* line 84, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#tabs li.outcomes a:hover, #tabs li.outcomes.selected a, .outcomes #controlPanel, .outcomes #topBar {
+  border-color: #7FC5EC;
+}
+
+/* line 85, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#tabs li.resources a:hover, #tabs li.resources.selected a, .resources #controlPanel {
+  border-color: #F0E22E;
+}
+
+/* line 86, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#tabs li.activities a:hover, #tabs li.activities.selected a, .activities #controlPanel {
+  border-color: #A1CC3A;
+}
+
+/* line 87, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#tabs li.policies a:hover, #tabs li.policies.selected a, .policies #controlPanel {
+  border-color: #BEBEE0;
+}
+
+/* line 88, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#tabs li.grades a:hover, #tabs li.grades.selected a, .grades #controlPanel {
+  border-color: #D4DAC8;
+}
+
+/* line 90, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+div#container {
+  border-color: #556677;
+}
+
+/* line 94, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel {
+  float: right;
+  width: 148px;
+  margin-top: 46px;
+  max-height: 80%;
+  overflow: auto;
+  font-size: 12px;
+}
+
+/* line 96, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel header input, #controlPanel header a {
+  width: 100%;
+  background: transparent;
+  border: 0 none;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* line 98, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel .ui-state-default header {
+  opacity: .4;
+}
+
+/* line 99, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel .ui-state-active header {
+  opacity: 1;
+}
+
+/* line 100, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel .ui-state-default fieldset {
+  display: none;
+}
+
+/* line 101, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel .ui-state-active fieldset {
+  display: block;
+}
+
+/* line 102, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel section {
+  padding: 5px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* line 103, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel section.first {
+  padding-bottom: 0px;
+}
+
+/* line 104, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel header {
+  background-color: #607386;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF8899AA', endColorstr='#FF607386');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg4OTlhYSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzYwNzM4NiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8899aa), color-stop(100%, #607386));
+  background-image: -webkit-linear-gradient(top, #8899aa 0%, #607386 100%);
+  background-image: -moz-linear-gradient(top, #8899aa 0%, #607386 100%);
+  background-image: -o-linear-gradient(top, #8899aa 0%, #607386 100%);
+  background-image: linear-gradient(top, #8899aa 0%, #607386 100%);
+  color: #fff;
+  padding: 0 5px;
+  line-height: 1.8;
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* line 105, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel header.tool {
+  background: #556677;
+}
+
+/* line 106, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel span.medium {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* line 107, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel fieldset, #controlPanel dl {
+  border: 0 none;
+  padding: 3px 3px 3px 5px;
+  background: #eee;
+  margin: 0;
+}
+
+/* line 108, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel dt {
+  background: #fff;
+  line-height: 1.9;
+  margin-bottom: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 109, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel dt.ui-state-active {
+  font-weight: bold;
+  background: #556677;
+  opacity: .6;
+  color: #fff;
+}
+
+/* line 110, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel dd {
+  display: none;
+  text-align: center;
+}
+
+/* line 111, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel legend {
+  background: #fff;
+  margin-right: 4px;
+  float: left;
+  width: 70px;
+  line-height: 1.9;
+  text-align: center;
+}
+
+/* line 112, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel fieldset.radioset legend {
+  width: 100%;
+  margin-bottom: .5em;
+}
+
+/* line 113, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel fieldset label {
+  position: absolute;
+  left: -999999px;
+}
+
+/* line 114, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel fieldset.radioset label {
+  position: static;
+  left: 0;
+  font-size: .8em;
+}
+
+/* line 115, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel fieldset input {
+  width: 2em;
+  height: 2em;
+  float: left;
+  margin-left: 2px;
+  line-height: 1;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 116, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel fieldset.radioset input {
+  width: auto;
+  height: auto;
+  float: none;
+}
+
+/* line 118, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#controlPanel, #container, #topBar {
+  border: solid 2px #aaa;
+  border-radius: 10px;
+}
+
+/* line 120, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#container, #topBar {
+  position: absolute;
+  top: 46px;
+  bottom: 35px;
+  left: 116px;
+  overflow: auto;
+  background: #fff;
+  width: 640px;
+}
+
+/* line 121, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#page {
+  padding: 15px;
+}
+
+/* line 122, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.content {
+  min-height: 1.4em;
+}
+
+/* line 123, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.editing input, .editing textarea {
+  width: 100% !important;
+  text-align: left !important;
+}
+
+/* line 124, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.right.editing input, #grade_scale .editing input {
+  width: 30px !important;
+  text-align: right !important;
+}
+
+/* line 125, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#grade_scale.inactive td, #grade_scale.inactive th {
+  color: #999;
+  background: #eee;
+}
+
+/* line 129, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.editingNum input, .editingNum textarea {
+  width: 50%;
+  text-align: right;
+}
+
+/* line 132, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.enableViewMessage {
+  text-align: center;
+}
+
+/* line 133, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.enableViewMessage button {
+  margin: 2em;
+  padding: 1em;
+}
+
+/* line 136, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#templates {
+  display: none;
+}
+
+/* line 139, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#preview_control {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* line 140, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#preview section {
+  border: solid 1px #fff;
+  padding-left: .25in;
+  /*min-height: 11in;*/
+}
+
+/* line 142, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#topBar {
+  z-index: 999;
+  background: #fff;
+  bottom: auto;
+}
+
+/* line 143, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#topBar h2 {
+  text-align: center;
+  margin: 5px 18px 0px;
+  font-size: 10pt;
+  color: #fff;
+  background: #556677;
+  opacity: .6;
+}
+
+/* line 145, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#topBar ul {
+  list-style: none;
+  margin: 0;
+  padding: 4px 15px 8px;
+  overflow: hidden;
+}
+
+/* line 146, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#topBar li {
+  float: left;
+  text-align: center;
+  margin: 3px;
+  width: 19%;
+}
+
+/* line 147, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#topBar li a {
+  background: #fff;
+  color: #000;
+  line-height: 1.6;
+  text-decoration: none;
+  display: block;
+}
+
+/* line 148, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.outcomes #topBar li a {
+  background: #7FC5EC;
+}
+
+/* line 150, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#messages {
+  display: block;
+  z-index: 999999999;
+  top: 28px;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: #ffe;
+  border-bottom: solid 1px #ddd;
+}
+
+/* line 158, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+h2.prompt {
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* removing this for the #messages queue */
+/* line 164, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.message {
+  .font-size: .8em;
+  border: solid 1px #090;
+  padding: .5em 1em;
+  margin: 1em 3em;
+}
+/* line 170, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.message.notice {
+  background: #efe;
+}
+/* line 174, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.message.warning {
+  background: #ffe;
+  border-color: #773420;
+}
+
+/* line 180, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#compilation_tabs .right {
+  float: right;
+}
+
+/* line 182, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#components tr.myDragClass td {
+  font-weight: bold;
+  background-color: #ffe4b5;
+}
+
+/* Modal Dialog Styles */
+/* line 186, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+div .ui-dialog {
+  z-index: 1000;
+}
+/* line 189, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+div .ui-dialog-titlebar {
+  background: #6a7f95;
+  border-radius: 0;
+  border: 0px;
+  color: #fff;
+  font-weight: normal;
+}
+/* line 196, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+div .ui-dialog-titlebar-close {
+  background: none;
+  border-radius: 0;
+  font-weight: normal;
+  color: #fff;
+  width: 70px !important;
+  border: none;
+}
+/* line 204, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+div .ui-dialog-titlebar-close:hover, div .ui-dialog-titlebar-close:active, div .ui-dialog-titlebar-close:focus {
+  background: none;
+  border: none;
+  color: #fff;
+}
+/* line 209, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+div .ui-icon-closethick {
+  background: none;
+}
+
+/* line 214, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+#editor_view {
+  height: 100%;
+}
+
+/* line 215, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.content_toolbar {
+  position: absolute;
+  top: 57px;
+  right: 170px;
+}
+
+/* line 216, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.content_toolbar a {
+  color: #556677;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+/* line 217, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.informationIcon a {
+  color: #c0c0c0;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+/* line 218, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.outcomesIcon a {
+  color: #7fc5ec;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+/* line 219, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.resourcesIcon a {
+  color: #f0e22e;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+/* line 220, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.activitiesIcon a {
+  color: #a1cc3a;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+/* line 221, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.policiesIcon a {
+  color: #bebee0;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+/* line 222, /var/www/ruby/salsa/app/assets/stylesheets/gui.css.scss */
+.gradesIcon a {
+  color: #d4dac8;
+  font-size: 1em;
+  text-decoration: none;
+}

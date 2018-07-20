@@ -27,6 +27,7 @@ class ApplicationController < ActionController::Base
   end
 
   def lms_connection_information
+
     if session[:institution] && session[:institution] != ''
       @institution = session['institution']
     elsif !params[:institution] || params[:institution] == ''
@@ -44,14 +45,14 @@ class ApplicationController < ActionController::Base
       @oauth_endpoint = @organization[:lms_authentication_source] unless @organization[:lms_authentication_source] == ''
       @lms_client_id = @organization[:lms_authentication_id] unless @organization[:lms_authentication_id] == ''
       @lms_secret = @organization[:lms_authentication_key] unless @organization[:lms_authentication_key] == ''
-      @callback_url = "http://#{@organization[:slug]}#{redirect_port}/oauth2/callback" unless @organization[:slug] == ''
+      @callback_url = "https://#{@organization[:slug]}#{redirect_port}/oauth2/callback" unless @organization[:slug] == ''
     end
 
     # defaults
     @oauth_endpoint = "https://#{@institution}.instructure.com" unless @oauth_endpoint
     @lms_client_id = APP_CONFIG['canvas_id'] unless @lms_client_id
     @lms_secret = APP_CONFIG['canvas_key'] unless @lms_secret
-    @callback_url = "http://#{request.env['SERVER_NAME']}#{redirect_port}/oauth2/callback" unless @callback_url
+    @callback_url = "https://#{request.env['SERVER_NAME']}#{redirect_port}/oauth2/callback" unless @callback_url
 
     if canvas_access_token && canvas_access_token != ''
       @lms_client = Canvas::API.new(:host => @oauth_endpoint, :token => canvas_access_token)
@@ -75,6 +76,7 @@ class ApplicationController < ActionController::Base
       else
         @redirect_url = "#{@lms_client.oauth_url(@callback_url)}%3Fdocument_id%3D#{params[:document_id]}"
       end
+      
     end
   end
 

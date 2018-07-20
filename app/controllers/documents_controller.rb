@@ -59,8 +59,17 @@ class DocumentsController < ApplicationController
       }
       format.pdf{
         html = render_to_string :layout => 'view', :template => '/documents/content.html.erb'
+        
         content = Rails.env.development? ? WickedPdf.new.pdf_from_string(html.force_encoding("UTF-8")) : html
-        render :text => content, :layout => false
+        
+        #pdf = WickedPdf.new.pdf_from_string(html)
+                 
+        #render :text => content, :layout => false
+        #render pdf: "test", :template => '/documents/content.html.erb', :layout => 'view'
+        
+        #render pdf: "test", :template => '/documents/content.html.erb', :layout => 'view'
+        
+        render :pdf => @document.view_id + ".pdf", :disposition => "inline", :template => "/documents/content.html.erb", :layout => "view"
       }
     end
   end
@@ -130,6 +139,10 @@ class DocumentsController < ApplicationController
 
       @view_pdf_url = view_pdf_url
       @view_url = view_url
+      
+      # Will Poillion - Added 5-11-2017
+      puts "edit_url:" + edit_url
+      @edit_url = edit_url
       @template_url = template_url
 
       # backwards compatibility alias
@@ -163,7 +176,9 @@ class DocumentsController < ApplicationController
 
   def update
     canvas_course_id = params[:canvas_course_id]
-
+    
+      puts "Canvas course ID: " + canvas_course_id.to_s
+    
     verify_org
 
     if canvas_course_id
@@ -190,6 +205,7 @@ class DocumentsController < ApplicationController
       msg = { :status => "ok", :message => "Success!" }
       format.json  {
         view_url = document_url(@document.view_id, :only_path => false)
+        edit_url = document_url(@document.edit_id, :only_path => false)
         render :json => msg
       }
     end
@@ -201,16 +217,21 @@ class DocumentsController < ApplicationController
     if Rails.env.production?
       "https://s3-#{APP_CONFIG['aws_region']}.amazonaws.com/#{APP_CONFIG['aws_bucket']}/hosted/#{@document.view_id}.pdf"
     else
-      "http://#{request.env['SERVER_NAME']}#{redirect_port}/#{sub_org_slugs}SALSA/#{@document.view_id}.pdf"
+      "https://#{request.env['SERVER_NAME']}#{redirect_port}/#{sub_org_slugs}SALSA/#{@document.view_id}.pdf"
     end
   end
 
   def view_url
-    "http://#{request.env['SERVER_NAME']}#{redirect_port}/#{sub_org_slugs}SALSA/#{@document.view_id}"
+    "https://#{request.env['SERVER_NAME']}#{redirect_port}/#{sub_org_slugs}SALSA/#{@document.view_id}"
   end
 
+  # Will Poillion - Added 5-11-2017 
+  def edit_url
+    "https://#{request.env['SERVER_NAME']}#{redirect_port}/#{sub_org_slugs}SALSA/#{@document.edit_id}/edit"
+  end
+  
   def template_url
-    "http://#{request.env['SERVER_NAME']}#{redirect_port}/#{sub_org_slugs}SALSA/#{@document.template_id}"
+    "https://#{request.env['SERVER_NAME']}#{redirect_port}/#{sub_org_slugs}SALSA/#{@document.template_id}"
   end
 
   def sub_org_slugs
@@ -223,6 +244,10 @@ class DocumentsController < ApplicationController
     raise ActionController::RoutingError.new('Not Found') unless @document
     @view_pdf_url = view_pdf_url
     @view_url = view_url
+    
+    # Will Poillion - Added 5-11-2017
+    @edit_url = edit_url
+    
     @template_url = template_url
 
     # use the component that was used when this document was created

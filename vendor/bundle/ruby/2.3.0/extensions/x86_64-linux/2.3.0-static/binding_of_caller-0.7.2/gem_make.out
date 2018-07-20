@@ -1,0 +1,16 @@
+current directory: /var/www/ruby/salsa/vendor/bundle/ruby/2.3.0/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+/home/ce.ou.edu/wpoillion/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20170412-15427-e5pxms.rb extconf.rb
+
+current directory: /var/www/ruby/salsa/vendor/bundle/ruby/2.3.0/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+make "DESTDIR=" clean
+make: *** No rule to make target `clean'.  Stop.
+
+current directory: /var/www/ruby/salsa/vendor/bundle/ruby/2.3.0/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+make "DESTDIR="
+echo "Nada."
+Nada.
+
+current directory: /var/www/ruby/salsa/vendor/bundle/ruby/2.3.0/gems/binding_of_caller-0.7.2/ext/binding_of_caller
+make "DESTDIR=" install
+echo "Nada."
+Nada.

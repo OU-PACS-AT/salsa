@@ -11,14 +11,32 @@ class CanvasController < ApplicationController
 
   def select_course_dialog partial
     @document = Document.find_by_edit_id(params[:id])
-    @courses = fetch_course_list
+      
+    # PP > Pre-production sub-accounts
+    @pre_prod = [75, 76, 80, 81, 77, 82, 83, 84, 312]
 
+    # Will Poillion 8-17-2017
+    #   Added production sub-accounts to make direct modifications to live courses for minor textbook corrections, etc.
+    # Production sub-accounts
+    #@prod = [249, 250, 257, 258, 260, 262, 263, 265, 267, 269, 271]
+    
+    # Combine pre_prod + prod sub accounts for full course list
+    #@accounts = @pre_prod + @prod    
+    @accounts = @pre_prod
+    
+    @courses = []
+    
+    @accounts.each do |account|
+      @courses.concat(fetch_course_list(account))  
+    end
+    
     # gather the course IDs from canvas result
     lms_course_ids = @courses.map{|c| c['id'].to_s }
 
     # find all organizations in this branch of the org tree
-    org_tree = @document.organization.root.self_and_descendants.pluck :id
-
+    #org_tree = @document.organization.root.self_and_descendants.pluck :id
+    org_tree = 1
+      
     # find all documents in org tree that match on the @courses.id
     linked_courses_salsa = Document.where organization_id: org_tree, lms_course_id: lms_course_ids
 
@@ -44,9 +62,11 @@ class CanvasController < ApplicationController
 
   protected
 
-  def fetch_course_list
+  def fetch_course_list account
     if canvas_client
-      canvas_client.get("/api/v1/courses?per_page=50", { include: 'syllabus_body' })
+      #canvas_client.get("/api/v1/courses?per_page=50", { include: 'syllabus_body' })
+      puts "/api/v1/accounts/#{account}/courses?per_page=999"
+      canvas_client.get("/api/v1/accounts/#{account}/courses?per_page=999", { include: 'syllabus_body' })
     end
   end
 

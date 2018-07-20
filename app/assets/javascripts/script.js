@@ -11,6 +11,10 @@ function liteOff(x){
     $(x).css({ backgroundColor: '' }).removeClass('control_highlighted');
 }
 
+function alertMe(x){
+	alert(x);
+}
+
 (function($) {
     $(function(){
         $('#tabs ul').sortable({
@@ -220,7 +224,7 @@ function liteOff(x){
         var makeNumericTextbox = function(editor){
             editor.on('keyup focus change', function(e){
                 if ($.inArray(e.which, [37, 38, 39, 40]) != -1) return false;
-                editor.val(editor.val().replace(/\D/g, ''));
+                editor.val(editor.val().replace(/[^0-9.]/g, ''));
             });
 
             editor.on('blur', function(e){
@@ -647,9 +651,11 @@ function liteOff(x){
 
             dataCells.each(function(){
                 if($(this).has('input').length) {
-                    value = parseInt($('input', this).val());
+                    //value = parseInt($('input', this).val());
+                    value = parseFloat($('input', this).val());
                 } else {
-                    value = parseInt($(this).text());
+                    //value = parseInt($(this).text());
+                    value = parseFloat($(this).text());
                 }
 
                 if(value) {

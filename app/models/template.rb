@@ -1,5 +1,5 @@
 class Template < ActiveRecord::Base
-  versioned
-
+  #versioned
+  
   belongs_to :organization
 end

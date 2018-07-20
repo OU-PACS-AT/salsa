@@ -1,6 +1,6 @@
 class Component < ActiveRecord::Base
-  versioned
-
+  #versioned
+  
   belongs_to :organization
   validates_uniqueness_of :slug, :scope => :organization_id
 

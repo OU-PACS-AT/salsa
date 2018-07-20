@@ -1,0 +1,15 @@
+current directory: /var/www/ruby/salsa/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+/home/ce.ou.edu/wpoillion/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20170606-3241-d2fr1u.rb extconf.rb
+creating Makefile
+
+current directory: /var/www/ruby/salsa/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /var/www/ruby/salsa/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.so
+
+current directory: /var/www/ruby/salsa/vendor/bundle/ruby/2.3.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.so ./.gem.20170606-3241-1e4kv25
