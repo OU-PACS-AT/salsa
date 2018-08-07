@@ -1,8 +1,0 @@
-.idea
-*.gem
-.bundle
-.gemtags
-.tags
-Gemfile.lock
-pkg/*
-tmp

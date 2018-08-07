@@ -5,6 +5,12 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 .vagrant/
+.gitconfig
+.bash_history
+# Ignore Compiled vendor directories (gems)
+/vendor/bundle/*
+/vendor/cache/*
+
 
 # Ignore bundler config.
 /.bundle
@@ -28,3 +34,5 @@ salsa_test
 /config/database.yml
 /config/newrelic.yml
 /config/secrets.yml
+
+

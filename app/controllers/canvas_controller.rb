@@ -13,7 +13,7 @@ class CanvasController < ApplicationController
     @document = Document.find_by_edit_id(params[:id])
       
     # PP > Pre-production sub-accounts
-    @pre_prod = [75, 76, 80, 81, 77, 82, 83, 84, 312]
+    @pre_prod = [75, 76, 80, 81, 413, 77, 82, 83, 84, 312]
 
     # Will Poillion 8-17-2017
     #   Added production sub-accounts to make direct modifications to live courses for minor textbook corrections, etc.
