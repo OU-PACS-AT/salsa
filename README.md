@@ -175,3 +175,4 @@ Deploy through Capistrano
 Copy `config/deploy/production.rb.default` paste to `config/deploy/production.rb`, change as necessary.
 
     cap production deploy
+
