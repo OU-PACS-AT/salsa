@@ -19,7 +19,7 @@ end
 
 #postgresql for db
 gem 'pg'
-gem 'mysql2', '~> 0.3.18'
+#gem 'mysql2', '~> 0.3.18'
 #gem 'mysql2'
 
 group :production do
