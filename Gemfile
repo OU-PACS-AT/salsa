@@ -21,7 +21,7 @@ end
 gem 'pg'
 #gem 'mysql2', '~> 0.3.18'
 #gem 'mysql2'
-
+ 
 group :production do
   gem 'rails_12factor'
 
