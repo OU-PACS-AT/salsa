@@ -1,3 +1,5 @@
+require 'net/http'
+
 class DefaultController < ApplicationController
 
   layout false
@@ -10,7 +12,8 @@ class DefaultController < ApplicationController
     if org and org.home_page_redirect?
       redirect_to org.home_page_redirect
     else
-      render layout: 'home'
+      #render layout: 'home'
+      redirect_to :controller => 'documents', :action => 'new'
     end
   end
 

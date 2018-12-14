@@ -8,14 +8,14 @@
     http://www.imsglobal.org/xsd/imsbasiclti_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imsbasiclti_v1p0.xsd
     http://www.imsglobal.org/xsd/imslticm_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imslticm_v1p0.xsd
     http://www.imsglobal.org/xsd/imslticp_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imslticp_v1p0.xsd">
-    <blti:title>CLS Syllabus Creator</blti:title>
-    <blti:description>College of Liberal Studies Syllabus Editor with Canvas Integration</blti:description>
+    <blti:title>PACS Syllabus Creator</blti:title>
+    <blti:description>College of Professional and Continuing Studies Syllabus Editor with Canvas Integration</blti:description>
     <blti:icon></blti:icon>
-    <blti:launch_url>https://atari.outreach.ou.edu/rb/salsa/</blti:launch_url>
+    <blti:launch_url>https://salsa.outreach.ou.edu/</blti:launch_url>
     <blti:extensions platform="canvas.instructure.com">
-      <lticm:property name="tool_id">cls_salsa</lticm:property>
+      <lticm:property name="tool_id">pacs_salsa</lticm:property>
       <lticm:property name="privacy_level">public</lticm:property>
-      <lticm:property name="domain">atari.outreach.ou.edu</lticm:property>
+      <lticm:property name="domain">salsa.outreach.ou.edu</lticm:property>
     </blti:extensions>
     <cartridge_bundle identifierref="BLTI001_Bundle"/>
     <cartridge_icon identifierref="BLTI001_Icon"/>
