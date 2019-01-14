@@ -222,6 +222,7 @@ DEPENDENCIES
   que
   rails (= 4.0.0)
   rails_12factor
+  rake
   rspec-rails
   rubyzip
   sass-rails (~> 4.0.0)
