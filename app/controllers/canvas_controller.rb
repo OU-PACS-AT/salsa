@@ -26,8 +26,13 @@ class CanvasController < ApplicationController
     
     @courses = []
     
-    @accounts.each do |account|
-      @courses.concat(fetch_course_list(account))  
+      
+    begin
+      @accounts.each do |account|
+        @courses.concat(fetch_course_list_admin(account))  
+      end
+    rescue
+      @courses.concat(fetch_course_list_teacher)  
     end
     
     # gather the course IDs from canvas result
@@ -62,14 +67,20 @@ class CanvasController < ApplicationController
 
   protected
 
-  def fetch_course_list account
+  def fetch_course_list_admin account
     if canvas_client
-      #canvas_client.get("/api/v1/courses?per_page=50", { include: 'syllabus_body' })
       puts "/api/v1/accounts/#{account}/courses?per_page=999"
       canvas_client.get("/api/v1/accounts/#{account}/courses?per_page=999", { include: 'syllabus_body' })
     end
   end
 
+  def fetch_course_list_teacher
+    if canvas_client
+      canvas_client.get("/api/v1/courses?per_page=50", { include: 'syllabus_body' })        
+    end
+  end
+
+  
   def canvas_access_token
     session[:canvas_access_token]["access_token"]
   end

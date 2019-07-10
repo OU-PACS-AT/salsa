@@ -1,5 +1,5 @@
 <div style="padding: 10px 0px 20px;">
-  <% if @courses %>
+  <% if @courses.size > 0 %>
 	<label>
 		Select a course to connect to:
 		<br><br>
@@ -17,7 +17,7 @@
   </label> -->
 
   <% else %>
-  	You do not appear to be connected to an LMS.
+  	You do not appear to be a teacher of any active course in Canvas at this time.
   <% end %>
 
 </div>
