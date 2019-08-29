@@ -15,6 +15,10 @@ class CanvasController < ApplicationController
     # PP > Pre-production sub-accounts
     @pre_prod = [75, 76, 80, 81, 413, 77, 82, 83, 84, 312]
 
+    # DEV > Dev sub-accounts
+    @dev = [53]
+
+    
     # Will Poillion 8-17-2017
     #   Added production sub-accounts to make direct modifications to live courses for minor textbook corrections, etc.
     # Production sub-accounts
@@ -22,7 +26,7 @@ class CanvasController < ApplicationController
     
     # Combine pre_prod + prod sub accounts for full course list
     #@accounts = @pre_prod + @prod    
-    @accounts = @pre_prod
+    @accounts = @pre_prod + @dev
     
     @courses = []
     
@@ -35,6 +39,8 @@ class CanvasController < ApplicationController
       @courses.concat(fetch_course_list_teacher)  
     end
     
+    @courses = @courses.sort_by{ |hsh| hsh["name"] }
+      
     # gather the course IDs from canvas result
     lms_course_ids = @courses.map{|c| c['id'].to_s }
 
