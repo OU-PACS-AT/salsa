@@ -13,7 +13,10 @@ class CanvasController < ApplicationController
     @document = Document.find_by_edit_id(params[:id])
       
     # PP > Pre-production sub-accounts
-    @pre_prod = [75, 76, 80, 81, 413, 77, 82, 83, 84, 312]
+    #@pre_prod = [75, 76, 80, 81, 413, 77, 82, 83, 84, 312]
+    # Switched to using highest level subaccount after implemented
+    #   multiple page api fetch. (Limit is 100 records per page)
+    @pre_prod = [74]
 
     # DEV > Dev sub-accounts
     @dev = [53]
@@ -29,11 +32,20 @@ class CanvasController < ApplicationController
     @accounts = @pre_prod + @dev
     
     @courses = []
-    
-      
+
+    # Leaving here as example logger so don't have to remember later.
+    #logger.error "TEST LOGGER"
+
     begin
       @accounts.each do |account|
-        @courses.concat(fetch_course_list_admin(account))  
+        page = 0
+        loop do
+          page = page + 1
+          @temp_courses = fetch_course_list_admin(account, page)
+          @courses.concat(@temp_courses)
+        break if @temp_courses.length <= 1
+        end
+ 
       end
     rescue
       @courses.concat(fetch_course_list_teacher)  
@@ -73,10 +85,10 @@ class CanvasController < ApplicationController
 
   protected
 
-  def fetch_course_list_admin account
+  def fetch_course_list_admin(account,page)
     if canvas_client
       puts "/api/v1/accounts/#{account}/courses?per_page=999"
-      canvas_client.get("/api/v1/accounts/#{account}/courses?per_page=999", { include: 'syllabus_body' })
+      canvas_client.get("/api/v1/accounts/#{account}/courses?per_page=999&page=" + page.to_s, { include: 'syllabus_body' })
     end
   end
 
