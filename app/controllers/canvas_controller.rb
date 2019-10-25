@@ -43,12 +43,16 @@ class CanvasController < ApplicationController
           page = page + 1
           @temp_courses = fetch_course_list_admin(account, page)
           @courses.concat(@temp_courses)
+          #raise 'error' 
         break if @temp_courses.length <= 1
         end
  
       end
     rescue
-      @courses.concat(fetch_course_list_teacher)  
+      @courses.concat([])
+      # 2019-10-24 Will Poillion
+      # Removed option for anyone who doesn't have admin privileges to publish to Canvas. 
+      # @courses.concat(fetch_course_list_teacher)  
     end
     
     @courses = @courses.sort_by{ |hsh| hsh["name"] }
@@ -85,6 +89,8 @@ class CanvasController < ApplicationController
 
   protected
 
+  # Gets list of all courses located within the subaccounts in the @accounts array
+  #   Only works if you have sufficient admin privileges in Canvas to execute the api call for getting all courses.
   def fetch_course_list_admin(account,page)
     if canvas_client
       puts "/api/v1/accounts/#{account}/courses?per_page=999"
@@ -92,6 +98,7 @@ class CanvasController < ApplicationController
     end
   end
 
+  # Gets list of courses for which you are an active teacher
   def fetch_course_list_teacher
     if canvas_client
       canvas_client.get("/api/v1/courses?per_page=50", { include: 'syllabus_body' })        

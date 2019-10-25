@@ -20,8 +20,8 @@ class Oauth2Controller < ApplicationController
     session[:authenticated_institution] = ''
 
     flash[:notice] = "You are disconnected from Canvas."
-
-    redirect_to(:back)
+    return redirect_to(@redirect_url) if @redirect_url
+    redirect_to("/")
   end
 
   def callback
