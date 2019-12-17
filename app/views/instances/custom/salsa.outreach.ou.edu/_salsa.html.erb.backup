@@ -1,0 +1,672 @@
+<%= salsa_partial "extend_document" %>
+
+
+<div style="margin: 0; padding: 0; background-color: #000000;">
+	<img src="https://drive.google.com/uc?export=view&amp;id=0B_RxBaBMYxt8M29qeTZHNF9LVXM" alt="College of Liberal Studies - University of Oklahoma" width="45%" data-api-endpoint="" data-api-returntype="File" style="max-width: 814px;">
+</div>
+<br>
+ 
+<!-- spacer for preview modal -->
+<div id="spacer">&nbsp;</div>
+<!-- each tab is represented by a section with an ID that identifies it -->
+<section id="information">
+    <!-- content class is the initial content for the tab -->
+    <div class="content">
+        <header id="title1I">
+                <h1>
+                    <div class="editable">Course Title</div>
+                    <div class="editable">Course Number | Term/Year</div>
+                </h1>
+        </header>
+        <div id="section1I" class="section1">
+            <div id="contacts1I" class="contacts">
+	            <h3>Faculty Information:</h3>
+					<p>To obtain the name and contact information of the course section instructor, select the "Instructor" link on the left navigation.</p>
+				<h3>Learning Management System:</h3>
+					<p>http://canvas.ou.edu/</p>
+				<h3>Course Meeting Time and Location:</h3>
+					<p>Online</p>
+				<h3>Course Prerequisite:</h3>
+					<div class="editableHtml"></div>
+				<h3>Course Delivery:</h3>
+					<p>Online</p>
+				<h3>Catalog Description:</h3>
+					<div class="editableHtml"></div>	
+				<h3>Course Goals:</h3>
+					<div class="editableHtml"></div>		
+			 </div>
+        </div><!-- .section1 -->
+
+       <div id="section2I" class="section2 hide">
+            <h2 class="editable">Section 2</h2>
+            <div id="headings2I" class="headings">
+                <div class="details">
+                    <div class="description">
+                        <h3 class="editable" data-can-delete="true">Heading</h3>
+                        <div class="editableHtml">
+                            Text
+                        </div>
+                    </div>                                                                                             
+                </div>
+            </div>                                                                                                    
+        </div><!-- .section2--> 
+
+        <div id="section3I" class="section3 hide">
+            <h2 class="editable">Section 3</h2>
+            <div id="headings3I" class="headings">
+                <div class="details">
+                    <div class="description">
+                        <h3 class="editable" data-can-delete="true">Heading</h3>
+                        <div class="editableHtml">
+                            Text
+                        </div>
+                    </div>                                                                                             
+                </div>
+            </div>                                                                                                   
+        </div><!-- .section3--> 
+
+        <div id="section4I" class="section4 hide">
+            <h2 class="editable">Section 4</h2>
+            <div id="headings4I" class="headings">
+                <div class="details">
+                    <div class="description">
+                        <h3 class="editable" data-can-delete="true">Heading</h3>
+                        <div class="editableHtml">
+                            Text
+                        </div>
+                    </div>                                                                                             
+                </div>
+            </div>                                                                                                   
+        </div><!-- .section4--> 
+
+    </div><!-- .content -->
+
+</section><!-- #information -->
+
+<section id="outcomes">
+    <div class="content">
+        <div id="section1O" class="section1">
+            <h3>Learning Outcomes</h3>
+            <div>Upon completion of this course you will be able to:</div>
+                <!-- bullets should be visible in this list -->
+                <div id="headings1O" class="headings">
+                    <div class="editableHtml">
+                        <ul class="outcomes_list">
+                            <li>Outcome text here</li>
+						</ul>
+                    </div>
+                </div>    
+        </div><!-- .section1 -->
+       
+       <div id="section2O" class="section2 hide">
+            <h2 class="editable">Section 2</h2>
+            <div id="headings2O" class="headings">
+                <div class="details">
+                    <div class="description">
+                        <h3 class="editable" data-can-delete="true">Heading</h3>
+                        <div class="editableHtml">
+                            Text
+                        </div>
+                    </div>                                                                                             
+                </div>
+            </div>                                                                                                    
+        </div><!-- .section2--> 
+
+        <div id="section3O" class="section3 hide">
+            <h2 class="editable">Section 3</h2>
+            <div id="headings3O" class="headings">
+                <div class="details">
+                    <div class="description">
+                        <h3 class="editable" data-can-delete="true">Heading</h3>
+                        <div class="editableHtml">
+                            Text
+                        </div>
+                    </div>                                                                                             
+                </div>
+            </div>                                                                                                    
+        </div><!-- .section3--> 
+
+       <div id="section4O" class="section4 hide">
+            <h2 class="editable">Section 4</h2>
+            <div id="headings4O" class="headings">
+                <div class="details">
+                    <div class="description">
+                        <h3 class="editable" data-can-delete="true">Heading</h3>
+                        <div class="editableHtml">
+                            Text
+                        </div>
+                    </div>                                                                                             
+                </div>
+            </div>                                                                                                    
+        </div><!-- .section4--> 
+
+    </div><!-- .content -->
+
+</section><!-- #outcomes -->
+
+
+<section id="resources">
+    <div class="content">
+        <div id="section1R" class="section1">
+            <h3>Texts and Materials:</h3>
+				<div class="editableHtml"></div>
+      
+        </div><!-- .section1 -->
+       
+       <div id="section2R" class="section2 hide">
+            <h2 class="editable">Section 2</h2>
+            <div id="headings2R" class="headings">
+                <div class="details">
+                    <div class="description">
+                        <h3 class="editable" data-can-delete="true">Heading</h3>
+                        <div class="editableHtml">
+                            Text
+                        </div>
+                    </div>                                                                                             
+                </div>
+            </div>                                                                                                    
+        </div><!-- .section2--> 
+
+        <div id="section3R" class="section3 hide">
+            <h2 class="editable">Section 3</h2>
+            <div id="headings3R" class="headings">
+                <div class="details">
+                    <div class="description">
+                        <h3 class="editable" data-can-delete="true">Heading</h3>
+                        <div class="editableHtml">
+                            Text
+                        </div>
+                    </div>                                                                                             
+                </div>
+            </div>                                                                                                    
+        </div><!-- .section3--> 
+
+       <div id="section4R" class="section4 hide">
+            <h2 class="editable">Section 4</h2>
+            <div id="headings4R" class="headings">
+                <div class="details">
+                    <div class="description">
+                        <h3 class="editable" data-can-delete="true">Heading</h3>
+                        <div class="editableHtml">
+                            Text
+                        </div>
+                    </div>                                                                                             
+                </div>
+            </div>                                                                                                    
+        </div><!-- .section4--> 
+
+    </div><!-- .content -->
+
+</section><!-- #resources -->
+
+<section id="activities">
+    <div class="content">
+
+        <div id="section1A" class="section1">
+		
+             <h3>Activities:</h3>
+		 	<!-- bullets should be visible in this list -->
+            	<div id="headings1O" class="headings">
+                	<div class="editableHtml">
+               		</div>
+            	</div>  
+				  
+			<h3>Assessments:</h3>
+				
+           	 <!-- bullets should be visible in this list -->
+            	<div id="headings1O" class="headings">
+                	<div class="editableHtml">
+                	</div>
+            	</div>    
+			   
+        </div><!-- .section1 -->
+       
+       <div id="section2A" class="section2 hide">
+            <h2 class="editable">Section 2</h2>
+            <div id="headings2A" class="headings">
+                <div class="details">
+                    <div class="description">
+                        <h3 class="editable" data-can-delete="true">Heading</h3>
+                        <div class="editableHtml">
+                            Text
+                        </div>
+                    </div>                                                                                             
+                </div>
+            </div>                                                                                                    
+        </div><!-- .section2--> 
+
+        <div id="section3A" class="section3 hide">
+            <h2 class="editable">Section 3</h2>
+            <div id="headings3A" class="headings">
+                <div class="details">
+                    <div class="description">
+                        <h3 class="editable" data-can-delete="true">Heading</h3>
+                        <div class="editableHtml">
+                            Text
+                        </div>
+                    </div>                                                                                             
+                </div>
+            </div>                                                                                                    
+        </div><!-- .section3--> 
+
+       <div id="section4A" class="section4 hide">
+            <h2 class="editable">Section 4</h2>
+            <div id="headings4A" class="headings">
+                <div class="details">
+                    <div class="description">
+                        <h3 class="editable" data-can-delete="true">Heading</h3>
+                        <div class="editableHtml">
+                            Text
+                        </div>
+                    </div>                                                                                             
+                </div>
+            </div>                                                                                                    
+        </div><!-- .section4--> 
+
+    </div><!-- .content -->
+
+</section><!-- #activities -->
+
+<section id="policies">
+    <div class="content">
+
+        <div id="section1P" class="section1">
+            <h3>Teaching Philosophy:</h3>
+				<p>We in the College of Liberal Studies (CLS) believe that higher education is a crucial ingredient in becoming a successful,
+				personally fulfilled human being and an actively engaged citizen of the state, nation, and world. Further, we operate with
+				the foundational assumption that a University of Oklahoma education should be available to all qualified students
+				regardless of their age, geographic location, or life circumstance.</p>
+				
+				<p>Acting on these assumptions, CLS strives to create significant and meaningful learning experiences through online and
+				accelerated course delivery methods. All CLS courses incorporate interdisciplinary perspectives and provide students with
+				a well-rounded, life-enriching liberal education combined with specialized study in selected program areas, thus preparing
+				them for ever higher levels of learning. CLS faculty members provide instruction, encouragement, timely response, and
+				constructive feedback to broaden and deepen the student's understanding of course materials.</p>
+				
+				<p>We understand that adult learners prefer, and have the best achievement, within a collaborative and interactive learning
+				environment, while functioning on their own personal schedules. We also believe that all students are capable of learning
+				and we aspire to enable students' self-agency in attaining their personal learning goals.</p>
+				
+			 <h3>Expectations:</h3>
+			 	<div>You can expect instructors to:</div>
+               	 <!-- bullets should be visible in this list -->
+                	<div id="headings1O" class="headings">
+                    	<div>
+                        	<ul class="outcomes_list">
+                            	<li>Challenge you to think about and understand the material in this course.</li>	
+								<li>Encourage you to learn the material in the course and become a lifelong learner.</li>
+								<li>Be available to return e-mails in a timely fashion, within 24-48 hours.</li>
+								<li>Return written assignments in a week or less, quizzes and exams in 72 hours or less.</li>
+								<li>Engage you in discussion.</li>
+								<li>Provide feedback.</li>				
+							</ul>
+                    	</div>
+                	</div>    
+				<div>As the student, you are expected to:</div>
+               	 <!-- bullets should be visible in this list -->
+                	<div id="headings1O" class="headings">
+                    	<div>
+                        	<ul class="outcomes_list">
+                            	<li>Accept responsibility for your learning.</li>
+								<li>Be engaged in the course by logging in to the course every week, reading course announcements, knowing when
+									assignments are due, and turning in all assignments on time.</li>	
+								<li>Set aside enough time to read and understand assigned course materials, successfully complete quizzes and tests,
+									actively participate in class discussions, and write thoughtful essays and research papers. Many CLS courses are
+									offered in compressed formats, so the time devoted to each class per week should be adjusted accordingly.</li>
+								<li>Read and apply feedback</li>
+								<li>Use only the OU email address for all OU correspondence and assignments.</li>
+								<li>Have all textbooks and course materials before the class starts.</li>
+								<li>Ask your advisor if you have questions about your degree program or other questions not related to a specific course.</li>	
+								<li>Have a reliable computer and a reliable Internet connection. Do some pre-planning and have a backup plan ready in
+									the event you should have computer or Internet problems.</li>
+								<li>Load all assignments in Canvas; do not email assignments to the professor.</li>
+								<li>Practice your writing skills. Familiarize yourself with the Grammarly self-edit tool provided to CLS to check your
+									papers prior to submission for grading.</li>	
+							</ul>
+						</div>
+					</div>
+			<h3>Grading Procedures</h3>
+				<p>Students will submit assignments in Canvas at http://canvas.ou.edu/ Assignments will be graded, with comments, and returned to the
+				student. Privacy will be maintained and student grades will not be publicly posted. This course is letter-graded.</p>
+				
+			<h3>Withdrawal Policy</h3>
+				<p>Because the College of Liberal Studies offers courses in multiple class session lengths throughout the academic year, please refer to
+				   the CLS academic advising website for rules and schedules regarding the College and University's withdrawal policies, procedures,
+				   and deadlines: http://www.ou.edu/content/cls/advising-support.html</p>
+				
+				<p>Dropping or withdrawing from a course may have an effect on your Financial Aid. Contact Financial Aid before you drop or withdraw
+				   from a course after the term has started. lsaid.ou.edu, 405-325-2929.</p>
+				
+			<h3>Assignment Completion Policy</h3>
+				<p>The College of Liberal Studies expects students to complete all assignments to earn a final grade in a given course.<p>
+			
+			<h3>Incomplete Policy</h3>
+				<p>For sufficiently extenuating circumstances a student may receive a grade of and receive an extension to complete. To receive a
+				   grade of a CLS student must satisfactorily complete a minimum of one-half of the course work, have a legitimate reason for not being
+				   able to complete the work during the normal time frame of the course, receive permission of the instructor, and sign an Incomplete
+				   Contract Agreement Form. The Incomplete Contract will be completed by the instructor and include a reason for the grade, a
+				   description of the remaining assignments due, and the final due date for submitting these assignments for grading.</p>
+				
+				<p>In most cases, the time allotted to complete the remaining assignments for a CLS course will not exceed 120 days. The maximum time
+				   limit allowed by the University of Oklahoma for completion of an is one calendar year. No CLS student may enroll in a
+				   subsequent semester with two or more active grades.</p>
+				   
+				<p>Please refer to the CLS academic advising website for more information regarding the College and University's Incomplete Policies
+				   and Procedures: http://www.ou.edu/content/cls/advising-support.html</p>
+				
+			<h3>Additional Support for Learning</h3>
+				<p>The College of Liberal Studies provides links to writing resources in the Content section of each Canvas course section. If you have
+				   questions about assignment requirements or would like to request feedback on a rough draft, you are encouraged to communicate with
+				   your course instructors while giving them enough lead time to respond before assignments are due.</p>
+				
+				<p>The OU Writing Center is a wonderful resource available to all students and is funded in part by your student course fees. The Writing
+				   Center is equipped to help students both online and in-person: http://www.ou.edu/content/writingcenter/.html</p>
+				
+				<p>OU Libraries resources are available to all CLS students, including the ability to live chat, e-mail, and/or call a reference librarian with
+				   questions you may have about finding and evaluating sources for research papers: http://libraries.ou.edu; http://guides.ou.edu/CLS</p>
+				
+			<h3>Additional CLS Policies</h3>
+				<p>Absences & Late Work: While CLS faculty members are expected to communicate with the class throughout the academic session, it
+				   is your responsibility to maintain personal communication with your instructors. If you need to miss a class (on-site), or if you are going
+				   to be delayed in submitting assignments (online), you should make all efforts to contact your faculty members in advance to let them
+				   know about your situation. Keep in mind that in most cases it is at the discretion of the instructor whether to grant an extension or
+				   apply late penalties to an assignment received after the posted deadline. Instructors are also allowed to set penalties for missing onsite
+				   class sessions.</p>
+				
+				<p>Faculty members are not obligated to initiate contact with you before giving assignment or final grades. If you have several absences
+				   (on-site classes) or outstanding/late assignments, your grade may be seriously impacted.</p>
+				
+				<p>Netiquette: The College of Liberal Studies has established a set of Netiquette Guidelines to be followed when communicating with
+				   your classmates and instructors. This information is available in the Content section of each Canvas course section and should be
+				   reviewed before participating in your first discussion topic. Failure to abide by these guidelines can lead to sanctions as outlined in
+				   the OU Student Rights and Responsibilities Code: http://www.ou.edu/content/dam/studentlife/documents/AllCampusStudentCode.pdf</p>
+				   
+				 <p>2017 College of Liberal Studies University of Oklahoma<p/> 
+            
+        </div><!-- .section1 -->
+		
+       
+       <div id="section2P" class="section2 hide">
+            <h2 class="editable">Section 2</h2>
+            <div id="headings2P" class="headings">
+                <div class="details">
+                    <div class="description">
+                        <h3 class="editable" data-can-delete="true">Heading</h3>
+                        <div class="editableHtml">
+                            Text
+                        </div>
+                    </div>                                                                                             
+                </div>
+            </div>                                                                                                    
+        </div><!-- .section2--> 
+
+        <div id="section3P" class="section3 hide">
+            <h2 class="editable">Section 3</h2>
+            <div id="headings3P" class="headings">
+                <div class="details">
+                    <div class="description">
+                        <h3 class="editable" data-can-delete="true">Heading</h3>
+                        <div class="editableHtml">
+                            Text
+                        </div>
+                    </div>                                                                                             
+                </div>
+            </div>                                                                                                    
+        </div><!-- .section3--> 
+
+       <div id="section4P" class="section4 hide">
+            <h2 class="editable">Section 4</h2>
+            <div id="headings4P" class="headings">
+                <div class="details">
+                    <div class="description">
+                        <h3 class="editable" data-can-delete="true">Heading</h3>
+                        <div class="editableHtml">
+                            Text
+                        </div>
+                    </div>                                                                                             
+                </div>
+            </div>                                                                                                    
+        </div><!-- .section4--> 
+      
+    </div><!-- .content -->
+</section><!-- #policies -->
+
+
+
+<section id="grades">
+    <div class="content">
+        <div id="section_break_P" class="section_break_P hide">
+            <div class="editableHtml page_break">
+                <div align="center">
+                    ----Please see next page for Grades information----
+                </div>
+            </div>
+        </div><!-- .section5--> 
+
+        <div id="section1G" class="section1">
+           <h2>Grades</h2>
+            <div class="details">
+                <div class="description">
+                    <div>
+                        <table id="grade_components" class="components" border="1">
+                            <caption class="grade editable">Your grade will be based on the following:</caption>
+                            <thead>
+                                <tr><th>Unit</th><th>Items</th><th>Points</th></tr>
+                            </thead>
+                            <tfoot>
+                                <tr class="total nodrag"><td></td><td>Total Points</td><td class="right">-</td></tr>
+                            </tfoot>
+                            <tbody>
+                                    <tr id="1.1"><td class="editable">#</td><td class="editable">Item</td><td class="editable right">-</td></tr>
+                                    <tr id="1.2"><td class="editable">#</td><td class="editable">Item</td><td class="editable right">-</td></tr>
+                            </tbody>
+                        </table>
+	                    <div id="tableText1G" class="tableText"> 
+	                        <div class="editableHtml hide">Text</div>
+	                    </div>  
+                    </div>
+                </div>
+            </div>
+        </div><!-- .section1 -->
+        
+        <div id="section2G" class="section2 hide">
+            <div class="details">
+                <div class="description">
+                    <div>
+                        <table id="extra_credit" class="components" border="1">
+                            <caption>You will have the opportunity to earn Extra Credit:</caption>
+                            <thead>
+                                <tr><th class="editable">Items</th><th>Points</th></tr>
+                            </thead>
+                            <tfoot>
+                                <tr class="total nodrag"><td>Total Extra Credit Points</td><td class="right">-</td></tr>
+                            </tfoot>
+                            <tbody>
+                                <tr id="2.1"><td class="editable">Item</td><td class="editable right">-</td></tr>
+                            </tbody>
+                        </table>
+	                    <div id="tableText2G" class="tableText"> 
+	                        <div class="editableHtml hide">Text</div>
+	                    </div>  
+                    </div> 
+                </div>
+            </div>                                                                                         
+        </div><!-- .section2 -->
+        
+        <div id="section3G" class="section3">
+            <div class="details">
+                <div class="description">
+                    <div>
+                        <table id="grade_scale" class="components inactive" border="1">
+                                <caption class="grade editable">Your grade will be calculated with this scale:</caption>
+                                <thead>
+                                    <tr><th>Grade</th><th>Percentage</th><th>Points</th></tr>
+                                </thead>
+                                <tbody class="center">
+                                    <tr>
+                                        <td>A</td>
+                                        <td>
+                                            <span class="editable minRange">90</span>
+                                            -
+                                            <span class="maxRange">100</span>
+                                        </td>
+                                        <td>-</td>
+                                    </tr>
+                                   
+
+                                    <tr class="even">
+                                        <td>B</td>
+                                        <td>
+                                            <span class="editable minRange">80</span>
+                                            -
+                                            <span class="maxRange">89</span>
+                                        </td>
+                                        <td>-</td>
+                                    </tr>
+                                  
+
+                                    <tr>
+                                        <td>C</td>
+                                        <td>
+                                            <span class="editable minRange">70</span>
+                                            -
+                                            <span class="maxRange">79</span>
+                                        </td>
+                                        <td>-</td>
+                                    </tr>
+                                   
+
+                                    <tr class="even">
+                                        <td>D</td>
+                                        <td>
+                                            <span class="editable minRange">60</span>
+                                            -
+                                            <span class="maxRange">69</span>
+                                        </td>
+                                        <td>-</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>F</td>
+                                        <td>
+                                            <span class="minRange">0</span>
+                                            -
+                                            <span class="maxRange">59</span>
+                                        </td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .section3 -->
+        
+        
+        <div class="editableHtml">
+        </div>
+        
+    </div><!-- .content -->
+    
+</section><!-- #grades -->
+
+<section id="schedule">
+    <div class="content">
+        <div id="section1S" class="section1 hide">
+            <div class="page_break editableHtml">
+                <div align="center">
+                    ----Please see next page for Schedule information----
+                </div>
+            </div>
+        </div><!-- .section1S-->
+
+        <h2 class="editable"></h2>
+        <div id="section2S" class="section2 hide">
+            <div class="details">
+                <div class="description">
+                    <div>
+                        <table id="table1" class="schedule" border="1">
+                            <caption class="editable">Table 1 Caption</caption>
+                            <thead>
+                                <tr>
+                                    <th id="col2S-left" class="col-left15 editable">Module</th>
+                                    <th id="col2S-middle" class="col-middle35 editable">Topic</th>
+                                    <th id="col2S-right" class="col-right50 editable">Assignment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td header="col2S-left" class="editable center">#</td>
+                                    <td header="col2S-middle" class="editable left">Text</td>
+                                    <td header="col2S-right" class="editable left">Text</td>
+                                </tr>
+                            </tbody>
+                        </table>
+	                    <div id="tableText2S" class="tableText"> 
+	                        <div class="editableHtml hide">Text</div>
+	                    </div>  
+                    </div>
+                </div>
+            </div>
+        </div><!-- #table1 -->
+
+        <div id="section3S" class="section3 hide">
+            <div class="details">
+                <div class="description">
+                    <div>
+                        <table id="table2" class="schedule" border="1">
+                            <caption class="editable">Table 2 Caption</caption>
+                            <thead>
+                                <tr>
+                                    <th id="col3S-left" class="col-left15 editable">Module</th>
+                                    <th id="col3S-middle" class="col-middle35 editable">Topic</th>
+                                    <th id="col3S-right" class="col-right50 editable">Assignment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td header="col3S-left" class="editable center">#</td>
+                                    <td header="col3S-middle" class="editable left">Text</td>
+                                    <td header="col3S-right" class="editable left">Text</td>
+                                </tr>
+                            </tbody>
+                        </table>
+	                    <div id="tableText3S" class="tableText"> 
+	                        <div class="editableHtml hide">Text</div>
+	                    </div>  
+                    </div>
+                </div>
+            </div>
+        </div><!-- #table2 -->
+
+        <div id="section4S" class="section4 hide">
+            <div class="details">
+                <div class="description">
+                    <div>
+                        <table id="table3" class="schedule" border="1">
+                            <caption class="editable">Table 3 Caption</caption>
+                            <thead>
+                                <tr>
+                                    <th id="col4S-left" class="col-left15 editable">Module</th>
+                                    <th id="col4S-middle" class="col-middle35 editable">Topic</th>
+                                    <th id="col4S-right" class="col-right50 editable">Assignment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td header="col4S-left" class="editable center">#</td>
+                                    <td header="col4S-middle" class="editable left">Text</td>
+                                    <td header="col4S-right" class="editable left">Text</td>
+                                </tr>
+                            </tbody>
+                        </table>
+	                    <div id="tableText4S" class="tableText"> 
+	                        <div class="editableHtml hide">Text</div>
+	                    </div>  
+                    </div>
+                </div>
+            </div>
+        </div><!-- #table3 -->
+    </div><!-- .content -->
+
+</section><!-- #schedule -->
