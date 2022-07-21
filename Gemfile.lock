@@ -183,7 +183,7 @@ GEM
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.3)
-    tzinfo (0.3.53)
+    tzinfo (0.3.61)
     uber-s3 (0.2.4)
       mime-types (~> 1.17)
     uglifier (3.2.0)
